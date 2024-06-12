@@ -5,6 +5,10 @@ import About from '../components/About.vue';
 import projects from '../components/Projects.vue';
 import Contact from '../components/Contact.vue';
 
+const router = createRouter({
+  history: createWebHistory('#'),
+  routes
+});
 
 const routes = [
   {
@@ -28,10 +32,5 @@ const routes = [
     component: Contact
   }
 ];
-
-const router = createRouter({
-  history: createWebHistory('#'),
-  routes
-});
 
 export default router;
