@@ -59,7 +59,7 @@ export default {
   margin: auto;
    margin-top: 40px; /* Ajusta el margen superior */
   padding-top: 20px; /* Ajuste del margen superior */
-  margin-left:170px;
+  margin-left:200px;
   text-align: center;
   border: 2px solid rgba(6, 194, 153, 0.7);
   border-radius: 10px;
@@ -93,5 +93,11 @@ pre {
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: rgba(255,255,255,0.75); }
+}
+
+@media (max-width: 768px) {
+  .home{
+    margin-left:10px;
+  }
 }
 </style>
