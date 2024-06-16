@@ -1,10 +1,7 @@
 <template>
   <div class="projects">
-    
     <div class="project-list">
-      
       <div v-for="project in projects" :key="project.id" class="project">
-        
         <div class="project-box">
           <h1 class="title">Mis Proyectos</h1>
           <br>
@@ -15,7 +12,6 @@
               <li><strong>Tecnologías:</strong> {{ project.technologies }}</li>
               <li><strong>Cliente:</strong> {{ project.client }}</li>
               <li><strong>Año de Desarrollo:</strong> {{ project.year }}</li>
-              <!-- Otros detalles del proyecto según sea necesario -->
             </ul>
           </div>
           <div class="project-images">
@@ -34,25 +30,18 @@ export default {
     return {
       projects: [
         {
-           id: 1,
-           title: 'Proyecto Sistema de Préstamos v1.0',
-           images: ['./src/assets/Sp1.jpeg', './src/assets/Sp2.jpeg', './src/assets/Sp3.jpeg'],
-            description: ' Es una Api Rest Full desarrollada para gestionar eficientemente préstamos financieros. Con tecnologías como Vue.js, Bootstrap y Node.js,Laravel,PHP, base de datos MYSQL entre otras. Este proyecto ofrece una combinación poderosa de robustez y rendimiento. Totalmente responsivo y adaptado para funcionar en dispositivos móviles, este sistema proporciona una gestión integral de préstamos, desde la creación de clientes hasta la generación de reportes detallados en formato PDF. Con una interfaz intuitiva y funcionalidades como seguimiento de pagos y simulación de préstamos, este proyecto representa una herramienta invaluable para instituciones financieras en 2024.',
-           technologies: 'Vue.js, Bootstrap, Node.js, Laravel, php, MYSQL',
-           client: 'Proximamente en Produccion',
-           year: 2024
-        },
-        // {
-        //   id: 2,
-        //   title: 'Proyecto 2',
-        //   images: ['/img/proyecto2/img1.jpg', '/img/proyecto2/img2.jpg', '/img/proyecto2/img3.jpg'],
-        //   description: 'Descripción del Proyecto 2.',
-        //   technologies: 'React, Tailwind CSS, Firebase',
-        //   client: 'Cliente 2',
-        //   year: 2022
-        //   // Agrega más detalles según sea necesario
-        // },
-        // Agrega más proyectos según sea necesario
+          id: 1,
+          title: 'Proyecto Sistema de Préstamos v1.0',
+          images: [
+            new URL('@/assets/Sp1.jpeg', import.meta.url).href,
+            new URL('@/assets/Sp2.jpeg', import.meta.url).href,
+            new URL('@/assets/Sp3.jpeg', import.meta.url).href
+          ],
+          description: 'Es una Api Rest Full desarrollada para gestionar eficientemente préstamos financieros. Con tecnologías como Vue.js, Bootstrap y Node.js,Laravel,PHP, base de datos MYSQL entre otras. Este proyecto ofrece una combinación poderosa de robustez y rendimiento. Totalmente responsivo y adaptado para funcionar en dispositivos móviles, este sistema proporciona una gestión integral de préstamos, desde la creación de clientes hasta la generación de reportes detallados en formato PDF. Con una interfaz intuitiva y funcionalidades como seguimiento de pagos y simulación de préstamos, este proyecto representa una herramienta invaluable para instituciones financieras en 2024',
+          technologies: 'Vue.js, Bootstrap, Node.js, Laravel, PHP, MySQL',
+          client: 'Próximamente en Producción',
+          year: 2024
+        }
       ]
     };
   }
