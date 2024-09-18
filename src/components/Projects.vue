@@ -1,11 +1,13 @@
 <template>
   <div class="projects">
+    <h1 class="title"> Mis Proyectos </h1>
+    <br>
     <div class="project-list">
       <div v-for="project in projects" :key="project.id" class="project">
         <div class="project-box">
-          <h1 class="title">Mis Proyectos</h1>
+         <h1 class="title">{{ project.title }}</h1>
           <br>
-          <h3>{{ project.title }}</h3>
+          <!-- <h3>{{ project.title }}</h3> -->
           <div class="project-description">
             <p>{{ project.description }}</p>
             <ul class="project-details">
@@ -39,10 +41,49 @@ export default {
           ],
           description: 'Es una Api Rest Full desarrollada para gestionar eficientemente préstamos financieros. Con tecnologías como Vue.js, Bootstrap y Node.js,Laravel,PHP, base de datos MYSQL entre otras. Este proyecto ofrece una combinación poderosa de robustez y rendimiento. Totalmente responsivo y adaptado para funcionar en dispositivos móviles, este sistema proporciona una gestión integral de préstamos, desde la creación de clientes hasta la generación de reportes detallados en formato PDF. Con una interfaz intuitiva y funcionalidades como seguimiento de pagos y simulación de préstamos, este proyecto representa una herramienta invaluable para instituciones financieras en 2024',
           technologies: 'Vue.js, Bootstrap, Node.js, Laravel, PHP, MySQL',
-          client: 'Próximamente en Producción',
+          client: 'Varios',
+          year: 2024
+        },
+        {
+          id: 2,
+          title: 'Web Api BIKE ',
+          images: [
+            new URL('@/assets/webbike.jpeg', import.meta.url).href,
+            new URL('@/assets/webbike2.jpeg', import.meta.url).href,
+          ],
+          description: 'Esta web bike la desarrolle a pedido del cliente, con base de datos para que los clientes y futuros clientes puedan registrarse en la misma publicar, tambien sume la funcion de poder localizar por Gogle Maps la ubicacion de las bicicleterias cercanas Actualmente contiamos con el desarrollo de la misma implementando mas funciones con finalidad Ecomerce ',
+          technologies: 'Vue.js, Bootstrap, Node.js, Laravel, PHP, MySQL, Google Maps',
+          client: 'Anonimo',
+          year: 2024
+        },
+        {
+          id: 3,
+          title: 'Estetica web api ',
+          images: [
+            new URL('@/assets/estetica.JPG', import.meta.url).href,
+            new URL('@/assets/estetica2.JPG', import.meta.url).href,
+            new URL('@/assets/estetica3.JPG', import.meta.url).href,
+            new URL('@/assets/estetica4.JPG', import.meta.url).href,
+          ],
+          description: 'WEB para una estetica, con implementacion de videos, contacto con codigo QR, panel de publicacion para administrador y otras modificaciones pedidos por el cliente ',
+          technologies: 'Vue.js, Bootstrap, Node.js, Laravel, PHP, MySQL',
+          client: 'Anonimo',
+          year: 2024
+        },
+        {
+          id: 4,
+          title: 'Api de Escritorio ',
+          images: [
+            new URL('@/assets/estacionamiento.JPG', import.meta.url).href,
+          
+          ],
+          description: 'Esta es una aplicacion de escritorio, que desarrolle con mis conocimientos recientes en el ecosistema Microsoft (C#, .NET, WPF, SQLite). A pedido de un cliente que necesitaba gestionar su estacionamiento mensual con una tabla simple con funcion de fecha y avisos de terminos como se ve en la foto. es una aplicacion totalmente portable a otros Ordenadores ',
+          technologies: 'C#, .Net, WPF, SQLite',
+          client: 'Anonimo',
           year: 2024
         }
       ]
+    
     };
   }
 };

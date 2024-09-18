@@ -3,7 +3,7 @@
     <div class="profile">
       <h1>Sobre Mí <i class="fas fa-code"></i></h1>
       <p>
-        Soy un <strong>Desarrollador Web Junior</strong> apasionado por la tecnología y con una gran motivación para aprender y crecer en el campo del desarrollo web. Tengo experiencia en la creación de APIs RESTfull y me especializo en la construcción de soluciones eficientes y escalables que conectan diversas aplicaciones y servicios web.
+        Soy un <strong>Desarrollador Web Junior</strong> apasionado por la tecnología, con enfoque en multiplataformas tanto en aplicaciones de escritorio como WEB y con una gran motivación para aprender y crecer en el campo del desarrollo. Tengo experiencia en la creación de APIs RESTfull, Api de escritorio y me especializo en la construcción de soluciones eficientes y escalables que conectan diversas aplicaciones.
       </p>
       <p>
         <b>Actualmente</b>, colaboro en un equipo de desarrollo dirigido por mi mentor, donde he adquirido experiencia significativa trabajando en equipo y gestionando proyectos con control de versiones. Con una antigüedad de 6 meses en este rol, he desarrollado habilidades clave para el trabajo colaborativo y la implementación de mejores prácticas en un entorno de desarrollo ágil.
@@ -24,6 +24,11 @@
         <li><b>Otros Estudios Autodidactas y Cursos Online</b>
           Además de mi formación formal, he complementado mi aprendizaje con estudios autodidactas y una variedad de cursos en línea. Estos cursos abarcan diversas tecnologías y herramientas clave en el desarrollo web, incluyendo<b> Bootstrap, Tailwind CSS, PHP, Laravel, y MySQL,</b> entre otros. Esta combinación de formación formal e informal me ha permitido desarrollar una amplia gama de habilidades y mantenerme al día con las últimas tendencias en la industria.
         </li>
+        <br>
+        <li><b>Curso Introduccion C# con .NET con WPF </b> -<i> Mayo 2024 a Agosto 2024</i>
+          Curso basico .NET con C# sharp ecosistema Microsoft (C#, .NET, WPF) a avanzado. En el cual aprendi a desarrollar aplicaciones de escritorio con WPF y otros formatos mas. con base de datos SQL LITE
+           
+        </li>
       </ul>
     </div>
 
@@ -39,6 +44,7 @@
           <div class="technology"><li> HTML <i class="fab fa-html5"></i></li></div>
           <div class="technology"><li> CSS <i class="fab fa-css3-alt"></i></li></div>
           <div class="technology"><li> JavaScript <i class="fab fa-js"></i></li></div>
+          <div class="technology"><li> WPF con C# <i class="fas fa-code"></i></li></div>
         </div>
       </div>
       <div class="skill">
@@ -49,10 +55,11 @@
         <br>
         <div class="technologies">
           <div class="technology"><li> MYSQL <i class="fas fa-database"></i></li></div>
+          <div class="technology"><li> SQLITE <i class="fas fa-server"></i></li></div>
         </div>
       </div>
       <div class="skill">
-        <h4>Back-End con PHP y Laravel <i class="fas fa-server"></i></h4>
+        <h4>Back-End <i class="fas fa-server"></i></h4>
         <div class="progress-bar">
           <div class="progress" style="width: 55%;">55%</div>
         </div>
@@ -61,6 +68,8 @@
           <div class="technology"><li> PHP <i class="fab fa-php"></i></li></div>
           <div class="technology"><li> Laravel <i class="fab fa-laravel"></i></li></div>
           <div class="technology"><li> MySQL <i class="fas fa-database"></i></li></div>
+          <div class="technology"><li> C# con SQLite <i class="fas fa-server"></i></li></div>
+          <div class="technology"><li> .Net  </li>  <i class="fab fa-microsoft"></i></div>
         </div>
       </div>
       <div class="skill">
@@ -76,6 +85,7 @@
           <div class="technology"><li> Bootstrap</li></div>
           <div class="technology"><li> Tailwind</li></div>
           <div class="technology"><li> Vite</li></div>
+          <div class="technology"><li> .NET framework </li> <i class="fab fa-microsoft"></i></div>
         </div>
       </div>
       <div class="skill">

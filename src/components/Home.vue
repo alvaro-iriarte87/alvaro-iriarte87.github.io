@@ -19,11 +19,11 @@ export default {
       "const developer = {",
       "    name: 'Alvaro Benjamin Iriarte Maccio',",
       "    age: 37 años",
-      "    skills: ['HTML', 'CSS', 'JavaScript', 'Vue.js','laravel', 'PHP', 'MYSQL'],",
-      "    En desarrollo Continuo de habilidades",
+      "    skills: ['HTML', 'CSS', 'JavaScript', 'Vue.js','.NET','C#','laravel', 'PHP', 'MYSQL','SQLite'],",
+      "    En desarrollo Continuo de habilidades Y Multi Plataformas ",
       "};",
       "",
-      "Print('Este portafolio ha sido creado utilizando mis conocimientos y habilidades adquiridas durante mi trayectoria como desarrollador web. Representa una síntesis de mi experiencia y mi capacidad para diseñar y desarrollar soluciones innovadoras en el campo del desarrollo web');",
+      "Print('Este portafolio ha sido creado utilizando mis conocimientos y habilidades adquiridas durante mi trayectoria como desarrollador Full Stack. Representa una síntesis de mi experiencia y mi capacidad para diseñar y desarrollar soluciones innovadoras, Tanto en el campo del desarrollo web Como el desarrollo de Aplicaciones de Escritorio');",
 
       "return developer </>"
     ];

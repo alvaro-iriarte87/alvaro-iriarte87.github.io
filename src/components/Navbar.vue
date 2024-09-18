@@ -9,7 +9,7 @@
     <div class="profile">
       <img :src="profileImage" alt="Alvaro Benjamin Iriarte Maccio" class="profile-img" />
       <h2>Alvaro Benjamin Iriarte Maccio</h2>
-      <p><i class="fas fa-laptop-code"></i> Desarrollador Web</p>
+      <p><i class="fas fa-laptop-code"></i> Desarrollador Full Stack (junior)</p>
     </div>
     <ul :class="{ 'menu-open': menuOpen }">
       <li><router-link to="/"><i class="fas fa-home"></i> Inicio</router-link></li>
