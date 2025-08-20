@@ -5,7 +5,7 @@
     <div class="project-list">
       <div v-for="project in projects" :key="project.id" class="project">
         <div class="project-box">
-         <h1 class="title">{{ project.title }}</h1>
+          <h1 class="title">{{ project.title }}</h1>
           <br>
           <!-- <h3>{{ project.title }}</h3> -->
           <div class="project-description">
@@ -17,7 +17,8 @@
             </ul>
           </div>
           <div class="project-images">
-            <img v-for="(image, index) in project.images" :key="index" :src="image" alt="Imagen de Proyecto" class="project-image">
+            <img v-for="(image, index) in project.images" :key="index" :src="image" alt="Imagen de Proyecto"
+              class="project-image">
           </div>
         </div>
       </div>
@@ -75,15 +76,65 @@ export default {
           title: 'Api de Escritorio ',
           images: [
             new URL('@/assets/estacionamiento.JPG', import.meta.url).href,
-          
+
           ],
           description: 'Esta es una aplicacion de escritorio, que desarrolle con mis conocimientos recientes en el ecosistema Microsoft (C#, .NET, WPF, SQLite). A pedido de un cliente que necesitaba gestionar su estacionamiento mensual con una tabla simple con funcion de fecha y avisos de terminos como se ve en la foto. es una aplicacion totalmente portable a otros Ordenadores ',
           technologies: 'C#, .Net, WPF, SQLite',
           client: 'Anonimo',
           year: 2024
+        },
+        {
+          id: 5,
+          title: 'Desarrollo y mantenimiento Pagina web ',
+          images: [
+            new URL('@/assets/norte1.jpg', import.meta.url).href,
+            new URL('@/assets/norte2.jpg', import.meta.url).href,
+
+          ],
+          description: 'Esta es una pagina web, la cual se uso un proyecto integrado con php laravel y vue.js vinculados en si, para una autonomia de codigo, es una pagina en funcionamiento constante y cambios continuos, con base de datos y o envios de formularios ',
+          technologies: 'PHP,laravel,vue.js,Mysql',
+          client: 'Norte Salud S.A.',
+          year: 2025
+        },
+        {
+          id: 6,
+          title: ' Api de escritorio para Agencia de ventas automotor ',
+          images: [
+            new URL('@/assets/Agencia.jpg', import.meta.url).href,
+
+
+          ],
+          description: 'Esta es una aplicacion de escritorio realizada a medida para el cliente, la cual tiene modulos para agregar vehiculos a la venta, realizar transaccion de venta con el calculo de intereses, reportes para imprimir entre otras funcines, realizada en .NET ultimas versiones ',
+          technologies: 'C#, .Net, WPF, SQLite',
+          client: 'Agencia Fortini automotores',
+          year: 2025
+        },
+        {
+          id: 7,
+          title: ' Manejo de redes sociales ',
+          images: [
+            new URL('@/assets/redesnorte.jpg', import.meta.url).href,
+
+
+          ],
+          description: 'Manejo de redes sociales, empresa de salud por medio de meta business, creacion de contenido para estrategias de venta, publicaciones y creacion continua',
+          client: 'Norte Salud S.A.',
+          year: 2025
+        },
+        {
+          id: 8,
+          title: ' Manejo de redes sociales ',
+          images: [
+            new URL('@/assets/motorepuestos.jpg', import.meta.url).href,
+
+
+          ],
+          description: 'Manejo de redes sociales, negocio de respuestos de motos por medio de meta business, creacion de contenido para estrategias de venta, publicaciones y creacion continua',
+          client: 'MotorepuestosMia',
+          year: 2025
         }
       ]
-    
+
     };
   }
 };
@@ -118,7 +169,7 @@ export default {
   /* border-radius: 10px; */
   padding: 1.5rem;
   text-align: left;
-   border: 2px solid rgba(6, 194, 153, 0.7);
+  border: 2px solid rgba(6, 194, 153, 0.7);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(6, 194, 153, 0.5);
 }
@@ -139,25 +190,31 @@ export default {
 
 .project-images {
   display: flex;
-  flex-wrap: wrap; /* Permite que las imágenes se ajusten automáticamente a la línea siguiente */
+  flex-wrap: wrap;
+  /* Permite que las imágenes se ajusten automáticamente a la línea siguiente */
   justify-content: center;
 }
 
 .project-image {
-  width: calc(50% - 20px); /* Ajusta el ancho de las imágenes para mostrar dos por fila */
+  width: calc(50% - 20px);
+  /* Ajusta el ancho de las imágenes para mostrar dos por fila */
   height: auto;
-  margin: 0.5rem; /* Añade un poco de margen entre las imágenes */
+  margin: 0.5rem;
+  /* Añade un poco de margen entre las imágenes */
 }
 
 @media (min-width: 768px) {
   .project-images {
     display: flex;
-    flex-wrap: wrap; /* Ajusta las imágenes en filas */
-    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap;
+    /* Ajusta las imágenes en filas */
+    justify-content: center;
+    /* Centra las imágenes horizontalmente */
   }
 
   .project-image {
-    width: 45%; /* Ancho de las imágenes en dispositivos más grandes */
+    width: 45%;
+    /* Ancho de las imágenes en dispositivos más grandes */
   }
 }
 </style>
